@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+--Amarillo: #EAC926;
+--Azul: #03264C;
+--Celeste: #1259c3;
+--Gris_oscuro: #666;
+--Gris_claro: #ebebeb;
+--Verde: #39b54a;
+}
+
+/* universal */
+*{
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background:#ebebeb;
+}
+
+header{
+    padding: 14px;
+    background: var(--Amarillo);
+    
+}
+
+.logo-ml{
+    padding: 10px;
+    max-height: 50px;
+
+}
+
+.buscador{
+    min-width: 250px;
+}
+
+.fa-search{
+    margin-left: 3px;
+}
+
+.cont-compra{
+    display: flex;
+    padding-top: 10px;
+}
+
+.fa-hand-holding-usd{
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* Menus */
+
+.cont-menu, .cont-menu-usuario{
+    margin-left: -25px;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--Azul);
+} 
+
+
+/* iconos menú usuario */
+.fa-id-card, .fa-sign-in-alt, .fa-shopping-basket{
+    padding-left: 5px;
+}
+
+.title-Visit-Offer{
+    font-size: 24px;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-bars{
+    font-size: 30px;
+    color: var(--Gris_claro);
+    padding: 12px;
+    background: var(--Celeste);
+    border-radius: 5px;
+}
+
+.images{
+    max-height:300px;
+    
+}
+
+.prices{
+    font-size: 18px;
+}
+
+.discounts-descriptions{
+    font-size: 16px;
+}
+
+/* main */
+
+main{
+    width:90vw;
+    display:inline-block;
+    text-align: center;
+    
+}
+
+.producto{
+    margin: 10px 15px;
+    background-color: white;
+   
+    
+}
+
+.desc-prod{
+    border-top: 1px solid #ebebeb;
+    
+}
+
+/* Footer */
+
+.pago, .envío, .seguridad{
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield{
+    color: var(--Celeste);
+    margin-bottom: 10px;
+    font-size: 2em;
+}
