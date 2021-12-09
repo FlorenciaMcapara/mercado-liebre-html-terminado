@@ -17,11 +17,13 @@
 
 body{
     background:#ebebeb;
+    box-sizing: border-box;
 }
 
 header{
     padding: 14px;
     background: var(--Amarillo);
+    box-sizing: border-box;
     
 }
 
@@ -53,6 +55,7 @@ header{
 /* Menus */
 
 .cont-menu, .cont-menu-usuario{
+    display: none;
     margin-left: -25px;
 }
 
@@ -77,6 +80,7 @@ a{
     font-size: 24px;
 }
 
+
 .burger-menu{
     display: flex;
     justify-content: center;
@@ -97,6 +101,7 @@ a{
 
 .prices{
     font-size: 18px;
+    
 }
 
 .discounts-descriptions{
@@ -109,20 +114,49 @@ main{
     width:90vw;
     display:inline-block;
     text-align: center;
+    box-sizing: border-box;
     
 }
 
 .producto{
     margin: 10px 15px;
-    background-color: white;
-   
-    
+    background-color: white;   
 }
 
 .desc-prod{
-    border-top: 1px solid #ebebeb;
-    
+    padding-top: 25px;
+    padding-left: 14px;
+    padding-bottom: 2px;
+    line-height: 4px;
+    text-align: left;
+    border-top: 1px solid #ebebeb; 
 }
+
+.descriptions{
+    display: none;
+}
+
+.icon-envio{
+    display: inline-flex;
+    position: relative;
+    border: 1px solid var(--Verde);
+    border-radius: 50%;
+    padding: 22px;
+}
+
+.fa-truck{
+    position: absolute;
+    justify-content: left;
+    color: var(--Verde);
+    top:6px;
+    left: 6px;  
+}
+
+
+.discounts{
+    color: var(--Verde);   
+}
+
 
 /* Footer */
 
@@ -135,4 +169,32 @@ main{
     color: var(--Celeste);
     margin-bottom: 10px;
     font-size: 2em;
+}
+
+
+/* Media Queries Navegación en tablets */
+
+@media(min-width: 361px){
+    .cont-menu, .cont-menu-usuario{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .descriptions{
+        display: block;
+         
+    }
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+}
+
+
+/* Media Queries Navegación en desktop */
+
+@media(min-width: 769px){
+    
 }
