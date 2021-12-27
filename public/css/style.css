@@ -11,16 +11,23 @@
 
 /* universal */
 *{
+
+/*     margin: 0px;
+    padding: 0px; */
     
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     background:#ebebeb;
     box-sizing: border-box;
+    margin: 0px;
+  
 }
 
-header{
+.main-header{
+    margin: 0px;
     padding: 14px;
     background: var(--Amarillo);
     box-sizing: border-box;
@@ -53,10 +60,18 @@ header{
 }
 
 /* Menus */
+.main-navar{
+    display: flex;
+    justify-content: space-between;
+}
+.main-navar li{
+    margin: 0 5px;
+}
 
 .cont-menu, .cont-menu-usuario{
     display: none;
     margin-left: -25px;
+
 }
 
 
@@ -95,13 +110,19 @@ a{
 }
 
 .images{
-    max-height:300px;
+    width: 100%;
     
 }
 
 .prices{
     font-size: 18px;
+    width: 30%;
+    margin-right: 10px;
     
+}
+
+.discounts{
+width: 70%;
 }
 
 .discounts-descriptions{
@@ -116,11 +137,30 @@ main{
     text-align: center;
     box-sizing: border-box;
     
+    
+    
+}
+
+.container-producto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
 .producto{
+    width: 100%;
     margin: 10px 15px;
     background-color: white;   
+    
+    
+}
+
+.cont-price-desc{
+    display: flex;
 }
 
 .desc-prod{
@@ -130,6 +170,7 @@ main{
     line-height: 4px;
     text-align: left;
     border-top: 1px solid #ebebeb; 
+    
 }
 
 .descriptions{
@@ -142,6 +183,8 @@ main{
     border: 1px solid var(--Verde);
     border-radius: 50%;
     padding: 22px;
+    left: 70%;
+    top: -45px;
 }
 
 .fa-truck{
@@ -176,7 +219,7 @@ main{
 
 @media(min-width: 361px){
     .cont-menu, .cont-menu-usuario{
-        display: block;
+        display: flex;
     }
     .burger-menu{
         display: none;
@@ -187,7 +230,7 @@ main{
     }
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
+        width: 45%;
     }
 
 }
@@ -196,5 +239,46 @@ main{
 /* Media Queries Navegación en desktop */
 
 @media(min-width: 769px){
-    
+.main-header-top-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.copy-header{
+    max-width: 350px;
+    text-align: right;
+}
+}
+
+@media(min-width: 1200px){
+    .main-header-top-bar, .main-navar{
+        max-width: 1200px;
+        margin: auto;
+    }   
+
+    .main-header-top-bar{
+        align-items: center;
+        
+    }
+
+    .copy-header{
+        margin: 0;
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .main-navar{
+        margin-top: 40px;
+    }
+
+
+    .main-navar li{
+        margin: 0 10px;
+    }
+    .main-navar a{
+        font-size: 19px;
+    }
+    .producto{
+        width: 22%;
+    }
 }

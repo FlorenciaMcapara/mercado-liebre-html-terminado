@@ -2,13 +2,14 @@
   "name": "proyecto-html",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-   "start": "node src/app"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
   }
 }
