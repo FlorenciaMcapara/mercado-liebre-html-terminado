@@ -20,3 +20,8 @@ app.get('/register', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/register.html'));
 
 });
+
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/login.html'));
+
+});
