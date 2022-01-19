@@ -31,13 +31,31 @@ body{
     padding: 14px;
     background: var(--Amarillo);
     box-sizing: border-box;
+    position: fixed; 
+    width: 100vw;
+    z-index: 80;
+    
     
 }
 
 .logo-ml{
     padding: 10px;
     max-height: 50px;
+    
+}
 
+.logo-ml:hover{
+    animation: aumentar 0.7s linear infinite alternate;
+}
+
+@keyframes aumentar{
+    0% {
+        transform: scale(1);
+
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 .buscador{
@@ -136,7 +154,7 @@ main{
     display:inline-block;
     text-align: center;
     box-sizing: border-box;
-    
+    margin-top: 200px;
     
     
 }
@@ -187,6 +205,18 @@ main{
     top: -45px;
 }
 
+.icon-envio:hover{
+    animation: girar 1s ease ;
+}
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
 .fa-truck{
     position: absolute;
     justify-content: left;
@@ -214,6 +244,16 @@ main{
     font-size: 2em;
 }
 
+.copyright{
+    font-weight: 300;
+    font-size: x-small;
+    margin-left: 20px;
+}
+
+.icon-footer:hover{
+    color: var(--Verde);
+    transition: color 1s;
+}
 
 /* Media Queries Navegación en tablets */
 
@@ -224,13 +264,36 @@ main{
     .burger-menu{
         display: none;
     }
+    
     .descriptions{
         display: block;
-         
+        opacity: 0;
+        transition: opacity 500ms;
     }
+
+    .descriptions:hover{
+        opacity: 1;
+        animation: mover ease-out 1s;
+    }
+
+    @keyframes mover {
+        0%{
+            transform: translateY(10px);
+        }
+
+        100%{
+            transform: translateY(0px);
+        }
+        
+    }
+
     .producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 45%;
+        transition:box-shadow 1000ms ;
+    }
+
+    .producto:hover{
+        box-shadow: 2px 2px 2px rgba(100, 100, 100,0.5);
     }
 
 }
@@ -247,6 +310,18 @@ main{
     max-width: 350px;
     text-align: right;
 }
+
+.cont-footer{
+    padding-top: 70px;
+    display: flex;
+    width: 95vw;
+}
+.pago, .envío, .seguridad{
+    display: block;
+}
+
+
+
 }
 
 @media(min-width: 1200px){
@@ -280,5 +355,6 @@ main{
     }
     .producto{
         width: 22%;
+        border-radius: 10px;
     }
 }

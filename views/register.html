@@ -20,7 +20,7 @@ rel="stylesheet" />
  <div class="main-header-top-bar"> 
       <!--LOGO-->
 
-       <img class="logo-ml" src="/images/logo-mercado-liebre.svg" alt="logo mercado libre">
+     <img class="logo-ml" src="/images/logo-mercado-liebre.svg" alt="logo mercado libre">
        
       
       <!--BUSCADOR-->
@@ -75,17 +75,17 @@ rel="stylesheet" />
 
 <main> 
 <!-- FORMULARIO DE REGISTRO -->
-<form action="/registro" method="post" class="fomulario">
+<form action='/' method="POST" class="fomulario">
     <div class="register">
-      <input class="entradas" type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
-      <input class="entradas" type="text" name="Nombre de usuari@" placeholder="Nombre de usuari@">
-      <input class="entradas" type="email" name="E-mail" placeholder="Email">
+      <input class="entradas" type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido" required>
+      <input class="entradas" type="text" name="Nombre de usuari@" placeholder="Nombre de usuari@" required>
+      <input class="entradas" type="email" name="E-mail" placeholder="Email" required>
     </div>
     
     <h4>Fecha de Nacimiento</h4>
 <div class="datos">
-      <input class="entradas" type="date" name="fecha">
-      <input class="entradas" type="text" name="Domicilio" placeholder="Domicilio">
+      <input class="entradas" type="date" name="fecha" required>
+      <input class="entradas" type="text" name="Domicilio" placeholder="Domicilio" required>
 </div>
 
     <h4>Perfil de Usuario</h4>
@@ -123,7 +123,7 @@ rel="stylesheet" />
       </div>
 
       <div class="btn">
-            <a href="http://localhost:3000"><input class="boton" type="button" value="Enviar"></a>
+            <button class="boton">Enviar</button>
             <input class="boton" type="reset" value="Limpiar">     
       </div>
   
@@ -137,29 +137,31 @@ rel="stylesheet" />
 
 <footer>
 
-<div class= "pago">
-
-
-<i class="fas fa-credit-card"></i>
-<p><b> Pagá con tarjeta o en efectivo </b> <br>Con mercado Liebre Cash, tenés cuotas sin interés con tarjeta o en efectivo en puntos de Pago. ¡Y siempre es seguro!</p>
-
-</div>
-
-<div class= "envío">
-
+      <div class="cont-footer">
+            <div class= "pago">
       
-      <i class="fas fa-gift"></i>
-      <p><b>Envío gratis desde 2.500</b><br>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
       
+                  <i class="fas fa-credit-card"></i>
+                  <p><b> Pagá con tarjeta o en efectivo </b> <br>Con mercado Liebre Cash, tenés cuotas sin interés con tarjeta o en efectivo en puntos de Pago. ¡Y siempre es seguro!</p>
+                  
+                  </div>
+                  
+                  <div class= "envío">
+                  
+                        
+                        <i class="fas fa-gift"></i>
+                        <p><b>Envío gratis desde 2.500</b><br>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                        
+                        </div>
+                  
+                        <div class= "seguridad">
+                  
+                              
+                              <i class="fas fa-user-shield"></i>
+                              <p><b>Seguridad de principio a fin</b><br>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+                              
+                              </div>
       </div>
-
-      <div class= "seguridad">
-
-            
-            <i class="fas fa-user-shield"></i>
-            <p><b>Seguridad de principio a fin</b><br>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-            
-            </div>
 
             <div class= "copyright">
 

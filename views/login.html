@@ -19,7 +19,7 @@ rel="stylesheet" />
       
  <div class="main-header-top-bar"> 
       <!--LOGO-->
-
+      
        <img class="logo-ml" src="/images/logo-mercado-liebre.svg" alt="logo mercado libre">
        
       
@@ -74,60 +74,29 @@ rel="stylesheet" />
 
 
 <main> 
-<!-- FORMULARIO DE REGISTRO -->
-<form action="/registro" method="post" class="fomulario">
-    <div class="register">
-      <input class="entradas" type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
-      <input class="entradas" type="text" name="Nombre de usuari@" placeholder="Nombre de usuari@">
-      <input class="entradas" type="email" name="E-mail" placeholder="Email">
+<!-- FORMULARIO DE LOGIN -->
+<form action='/' method="POST" class="fomulario">
+    <div class="login">
+
+      <input class="entradas" type="text" name="Nombre de usuari@" placeholder="Nombre de usuari@" required>
     </div>
     
-    <h4>Fecha de Nacimiento</h4>
-<div class="datos">
-      <input class="entradas" type="date" name="fecha">
-      <input class="entradas" type="text" name="Domicilio" placeholder="Domicilio">
-</div>
-
-    <h4>Perfil de Usuario</h4>
-    <div class="perfil-usuairo">
-      <input type="radio" name="medio" value="comprador">
-      <label for="comprador">Comprador</label>
-      <input type="radio" name="medio" value="vendedor">
-      <label for="vendedor">Vendedor</label>
-    </div>
     
-    <h4>Intereses</h4>
-    <div class="intereses">
-      <input class="check" type="checkbox" name="intereses" value="electro">
-      <label  for="electro">Electro</label><br>
-      <input class="check" type="checkbox" name="intereses" value="moda">
-      <label for="moda">Moda</label><br>
-      <input class="check" type="checkbox" name="intereses" value="hogar">
-      <label for="hogar">Hogar</label><br>
-      <input class="check" type="checkbox" name="intereses" value="jugeteria">
-      <label for="jugeteria">Juguetería</label><br>
-      <input class="check" type="checkbox" name="intereses" value="vida-sana">
-      <label for="vida-sana">Vida Sana</label><br>
-      </div>
-
-      <div class="imagen-perfil">
-            <label class="labels" for="foto-perfil">Seleccionar una imagen para el perfil</label>
-            <input  type="file" name="avatar" accept=".jpg" id="foto-perfil">
-      </div>
 
       <div class="pass">
-            <label for="pass1" class="label-pass">Contraseña</label>
-            <input type="password" class="entradas" id="pass1">
-            <label for="pass2" class="label-pass">Confirmar Contraseña</label>
-            <input type="password" class="entradas" id="pass2">
+           
+            <input type="password" class="entradas" id="pass1" placeholder="Ingresá tu contraseña">
       </div>
 
       <div class="btn">
-            <a href="http://localhost:3000"><input class="boton" type="button" value="Enviar"></a>
-            <input class="boton" type="reset" value="Limpiar">     
+            
+            <button class="boton">Enviar</button>
+                
       </div>
   
 </form>
+
+
 </main>
 
 <br>
@@ -137,29 +106,31 @@ rel="stylesheet" />
 
 <footer>
 
-<div class= "pago">
-
-
-<i class="fas fa-credit-card"></i>
-<p><b> Pagá con tarjeta o en efectivo </b> <br>Con mercado Liebre Cash, tenés cuotas sin interés con tarjeta o en efectivo en puntos de Pago. ¡Y siempre es seguro!</p>
-
-</div>
-
-<div class= "envío">
-
+      <div class="cont-footer">
+            <div class= "pago">
       
-      <i class="fas fa-gift"></i>
-      <p><b>Envío gratis desde 2.500</b><br>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
       
+                  <i class="fas fa-credit-card"></i>
+                  <p><b> Pagá con tarjeta o en efectivo </b> <br>Con mercado Liebre Cash, tenés cuotas sin interés con tarjeta o en efectivo en puntos de Pago. ¡Y siempre es seguro!</p>
+                  
+                  </div>
+                  
+                  <div class= "envío">
+                  
+                        
+                        <i class="fas fa-gift"></i>
+                        <p><b>Envío gratis desde 2.500</b><br>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                        
+                        </div>
+                  
+                        <div class= "seguridad">
+                  
+                              
+                              <i class="fas fa-user-shield"></i>
+                              <p><b>Seguridad de principio a fin</b><br>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+                              
+                              </div>
       </div>
-
-      <div class= "seguridad">
-
-            
-            <i class="fas fa-user-shield"></i>
-            <p><b>Seguridad de principio a fin</b><br>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-            
-            </div>
 
             <div class= "copyright">
 
